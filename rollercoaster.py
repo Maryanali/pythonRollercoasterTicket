@@ -26,11 +26,12 @@ if height >= 120:
 		bill = 10
 	elif age > 60:
 		bill = 5
-	else: 
-		bill = 12
+	elif age > 45 < 55:
+		bill = 0
+		
 	
 	wants_photo = input("Do you want a photo taken, Y or yes or N for no ")
-	if wants_photo == "Y" or "y":
+	if wants_photo == "Y":
 		bill += 3
 	print(f"Your final bill is {bill}")
 		
